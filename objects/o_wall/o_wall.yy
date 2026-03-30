@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "o_wall",
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_wall_collision",
+    "path": "sprites/s_wall_collision/s_wall_collision.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

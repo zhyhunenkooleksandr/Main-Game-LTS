@@ -1,4 +1,27 @@
-/// @description Insert description here
+//Camera
+
+// 1. Get Camera Dimensions
+var _cam_w = camera_get_view_width(view_camera[0]);
+var _cam_h = camera_get_view_height(view_camera[0]);
+
+// 2. Calculate desired position (centering the player)
+var _target_x = x - (_cam_w / 2);
+var _target_y = y - (_cam_h / 2);
+
+// 3. Clamp the values so the camera doesn't show the "gray void" outside the room
+_target_x = clamp(_target_x, 0, room_width - _cam_w);
+_target_y = clamp(_target_y, 0, room_height - _cam_h);
+
+// 4. Update the Camera Position
+var _current_x = camera_get_view_x(view_camera[0]);
+var _current_y = camera_get_view_y(view_camera[0]);
+
+var _smooth_x = lerp(_current_x, _target_x, 0.1); // 0.1 is the follow speed
+var _smooth_y = lerp(_current_y, _target_y, 0.1);
+
+camera_set_view_pos(view_camera[0], _smooth_x, _smooth_y);
+
+
 
 // 1. Get Input
 var _key_right = keyboard_check(vk_right) || keyboard_check(ord("D"));

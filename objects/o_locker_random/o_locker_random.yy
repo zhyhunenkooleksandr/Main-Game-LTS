@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_game",
-  "spriteId": null,
+  "name": "o_locker_random",
+  "spriteId": {
+    "name": "s_locker",
+    "path": "sprites/s_locker/s_locker.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -27,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Lockers",
+    "path": "folders/Objects/Objects/Lockers.yy",
   },
 }

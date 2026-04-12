@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_game",
-  "spriteId": null,
+  "name": "o_locker_MC",
+  "spriteId": {
+    "name": "s_lockerMC",
+    "path": "sprites/s_lockerMC/s_lockerMC.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -21,13 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Lockers",
+    "path": "folders/Objects/Objects/Lockers.yy",
   },
 }

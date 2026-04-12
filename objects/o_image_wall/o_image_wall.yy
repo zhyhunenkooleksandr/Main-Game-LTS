@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_game",
-  "spriteId": null,
+  "name": "o_image_wall",
+  "spriteId": {
+    "name": "s_wall",
+    "path": "sprites/s_wall/s_wall.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -21,13 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Wall",
+    "path": "folders/Objects/Objects/Wall.yy",
   },
 }

@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_item",
-  "spriteId": null,
+  "name": "o_clock",
+  "spriteId": {
+    "name": "s_clock",
+    "path": "sprites/s_clock/s_clock.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -21,13 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_player","path":"objects/o_player/o_player.yy",},},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Clock",
+    "path": "folders/Objects/Objects/Clock.yy",
   },
 }

@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_image_wall",
+  "name": "o_walllines_dark",
   "spriteId": {
-    "name": "s_wall",
-    "path": "sprites/s_wall/s_wall.yy",
+    "name": "s_walllines_dark",
+    "path": "sprites/s_walllines_dark/s_walllines_dark.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Wall",
-    "path": "folders/Objects/Objects/Wall.yy",
+    "name": "Wall_Lines",
+    "path": "folders/Objects/Objects/Wall_Lines.yy",
   },
 }

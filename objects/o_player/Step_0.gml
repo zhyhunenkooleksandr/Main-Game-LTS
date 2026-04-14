@@ -16,11 +16,10 @@ _target_y = clamp(_target_y, 0, room_height - _cam_h);
 var _current_x = camera_get_view_x(view_camera[0]);
 var _current_y = camera_get_view_y(view_camera[0]);
 
-var _smooth_x = lerp(_current_x, _target_x, 0.1); // 0.1 is the follow speed
-var _smooth_y = lerp(_current_y, _target_y, 0.1);
+var _smooth_x = lerp(_current_x, _target_x, 0.03); // 0.1 is the follow speed
+var _smooth_y = lerp(_current_y, _target_y, 0.03);
 
 camera_set_view_pos(view_camera[0], _smooth_x, _smooth_y);
-
 
 
 // 1. Get Input

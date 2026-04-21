@@ -1,13 +1,12 @@
 if (instance_exists(o_player)) {
     var _cam = view_camera[0];
     
-    var _target_x = o_player.x - 485; // Half of your 970 width
-    var _target_y = o_player.y - 450; // We subtract 450 so the player is near the bottom
+    var _target_x = o_player.x - 485;
+    var _target_y = o_player.y - 450;
     
     _target_x = clamp(_target_x, 0, room_width - 970);
     _target_y = clamp(_target_y, 0, room_height - 540);
 	
-	// 4. Get where we ARE now
     var _curr_x = camera_get_view_x(_cam);
     var _curr_y = camera_get_view_y(_cam);
 

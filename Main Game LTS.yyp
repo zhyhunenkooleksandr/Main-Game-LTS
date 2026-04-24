@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"s_plant_big","path":"sprites/s_plant_big/s_plant_big.yy",},"order":0,},
     {"id":{"name":"s_walllines_dark","path":"sprites/s_walllines_dark/s_walllines_dark.yy",},"order":1,},
+    {"id":{"name":"s_speech_bubble","path":"sprites/s_speech_bubble/s_speech_bubble.yy",},"order":0,},
     {"id":{"name":"o_board","path":"objects/o_board/o_board.yy",},"order":0,},
     {"id":{"name":"o_game","path":"objects/o_game/o_game.yy",},"order":3,},
     {"id":{"name":"s_walllines_light","path":"sprites/s_walllines_light/s_walllines_light.yy",},"order":0,},
@@ -19,6 +20,7 @@
     {"id":{"name":"o_walllines_dark","path":"objects/o_walllines_dark/o_walllines_dark.yy",},"order":0,},
     {"id":{"name":"o_clock","path":"objects/o_clock/o_clock.yy",},"order":0,},
     {"id":{"name":"o_plant_big","path":"objects/o_plant_big/o_plant_big.yy",},"order":0,},
+    {"id":{"name":"o_dialogue_controller","path":"objects/o_dialogue_controller/o_dialogue_controller.yy",},"order":9,},
     {"id":{"name":"o_image_wall_front","path":"objects/o_image_wall_front/o_image_wall_front.yy",},"order":1,},
     {"id":{"name":"o_plant_small","path":"objects/o_plant_small/o_plant_small.yy",},"order":1,},
     {"id":{"name":"o_MC","path":"objects/o_MC/o_MC.yy",},"order":0,},
@@ -135,6 +137,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Wall","folderPath":"folders/Sprites/Objects/Wall.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Window","folderPath":"folders/Sprites/Objects/Window.yy","order":11,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Sprites/Player.yy","order":1,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Speech Bubble","folderPath":"folders/Sprites/Speech Bubble.yy","order":9,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":8,},
   ],
@@ -144,7 +147,9 @@
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","isScaled":true,"compressFormat":"bz2","loadType":"default","directory":"","autocrop":true,"border":16,"mipsToGenerate":0,"groupParent":null,"targets":-1,},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Untitled288.mov","CopyToMask":64,"filePath":"datafiles",},
+  ],
   "MetaData": {
     "IDEVersion": "2022.0.3.85",
   },

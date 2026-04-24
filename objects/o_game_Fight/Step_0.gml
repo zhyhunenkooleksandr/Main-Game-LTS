@@ -6,13 +6,12 @@ if (player_state == "idle") {
     if (_key_atk) {
         player_state = "attack";
         player_can_damage = true;
-        attack_timer = attack_duration; // <--- ADD THIS: Start the countdown
+        attack_timer = attack_duration;
     } else if (_key_blk) {
         player_state = "block";
     }
 }
 
-// Releasing Block (No changes needed here)
 if (player_state == "block") {
     if (!mouse_check_button(mb_right) && !keyboard_check(ord("D"))) {
         player_state = "idle";
@@ -24,13 +23,11 @@ if (player_state == "attack") {
     attack_timer -= 1;
     
     if (attack_timer == 1 && player_can_damage) {
-        // Only block if the enemy is NOT already attacking (Counter-hit mechanic!)
         if (enemy_state == "idle" && irandom(1) == 1) {
             enemy_state = "block";
-            enemy_attack_timer = 20; // How long he stays in the block pose
-            // No damage is dealt here
+            enemy_attack_timer = 20;
         } else {
-            enemy_lives -= 1; // Take damage
+            enemy_lives -= 1;
         }
         player_can_damage = false; 
     }
@@ -73,7 +70,7 @@ if (player_lives <= 0) {
 if (enemy_lives <= 0) {
     instance_destroy();
     show_message("Prototype Victory: Enemy Defeated.");
-    game_restart();
+    game_end();
 }
 
 

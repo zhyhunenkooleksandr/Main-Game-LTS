@@ -1,3 +1,4 @@
+// IDLE, ATTACK, BLOCK Player
 if (o_game_Fight.player_state == "idle") {
     sprite_index = s_MC_idle;
 } else if (o_game_Fight.player_state == "block") {

@@ -1,7 +1,8 @@
+// --- CONTROLS ---
 var _key_atk = mouse_check_button_pressed(mb_left) || keyboard_check_pressed(ord("A"));
 var _key_blk = mouse_check_button(mb_right) || keyboard_check(ord("D"));
 
-// Handle Player States
+// --- HANDLE PLAYER STATES ---
 if (player_state == "idle") {
     if (_key_atk) {
         player_state = "attack";
@@ -61,12 +62,13 @@ if (enemy_state == "attack") {
 }
 
 // --- DEATH CHECK ---
+   // --- PLAYER ---
 if (player_lives <= 0) {
     instance_destroy();
     show_message("Prototype End: Player Defeated.");
     game_restart();
 }
-
+   // --- ENEMY ---
 if (enemy_lives <= 0) {
     instance_destroy();
     show_message("Prototype Victory: Enemy Defeated.");

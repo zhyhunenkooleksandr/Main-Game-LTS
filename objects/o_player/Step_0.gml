@@ -1,5 +1,4 @@
 //Camera
-
 var _cam_w = camera_get_view_width(view_camera[0]);
 var _cam_h = camera_get_view_height(view_camera[0]);
 
@@ -26,7 +25,7 @@ var _key_down  = keyboard_check(vk_down)  || keyboard_check(ord("S"));
 var _input_x = _key_right - _key_left;
 var _input_y = _key_down - _key_up;
 
-// 2. Target Velocity (Normalized)
+// 2. Target Velocity
 var _target_vx = 0;
 var _target_vy = 0;
 
@@ -36,7 +35,7 @@ if (_input_x != 0 || _input_y != 0) {
     _target_vy = lengthdir_y(move_sp, _dir);
 }
 
-// 3. Lerp (Smoothness)
+// 3. Lerp
 vx = lerp(vx, _target_vx, 0.2);
 vy = lerp(vy, _target_vy, 0.2);
 
@@ -68,7 +67,6 @@ if (_input_x != 0 || _input_y != 0) {
         else if (_input_y < 0) image_index = 3; // Back
     }
 } else {
-    // Only idle if speed has almost stopped
     if (abs(vx) < 0.2 && abs(vy) < 0.2) {
         image_index = 2;
     }

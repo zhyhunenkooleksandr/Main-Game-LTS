@@ -1,3 +1,4 @@
+//All varuables of Dialogue
 messages = [];
 page = 0;
 char_count = 0;

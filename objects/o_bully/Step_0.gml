@@ -1,4 +1,4 @@
-
+//Going to next room
 var _near_player = (distance_to_object(o_player) < 30);
 
 var _key_interact = keyboard_check_pressed(ord("E"));

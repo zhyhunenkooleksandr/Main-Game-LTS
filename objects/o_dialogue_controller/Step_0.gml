@@ -4,7 +4,7 @@ if (page < array_length(messages)) {
     }
 }
 
-// 2. Interaction Logic
+// 2. Interactive Logic
 if (keyboard_check_pressed(ord("E")) || mouse_check_button_pressed(mb_left)) {
     if (char_count < string_length(messages[page])) {
         char_count = string_length(messages[page]);
@@ -18,7 +18,7 @@ if (keyboard_check_pressed(ord("E")) || mouse_check_button_pressed(mb_left)) {
         }
     }
 }
-
+//length of massages
 if (page == array_length(messages) - 1) {
     if (char_count >= string_length(messages[page])) {
         

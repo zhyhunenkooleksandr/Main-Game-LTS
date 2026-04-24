@@ -1,3 +1,4 @@
+//Draw Item Pickup GUI
 if (global.has_item) {
     var _gui_h = display_get_gui_height();
     

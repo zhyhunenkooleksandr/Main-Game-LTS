@@ -1,3 +1,4 @@
+//Starting player settings
 image_speed = 0;
 move_sp = 4;
 vx = 0;

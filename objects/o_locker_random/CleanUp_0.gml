@@ -1,0 +1,1 @@
+global.can_open_lockers = true;

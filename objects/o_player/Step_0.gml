@@ -57,20 +57,47 @@ if (place_meeting(x, y + vy, o_wall)) {
 }
 y += vy;
 
-// 6. Animation Logic
+// 6. Animation and Sound Logic
 if (_input_x != 0 || _input_y != 0) {
-    if (abs(_input_x) >= abs(_input_y)) {
-        if (_input_x > 0)      image_index = 0; // Right
-        else if (_input_x < 0) image_index = 1; // Left
-    } else {
-        if (_input_y > 0)      image_index = 2; // Front
-        else if (_input_y < 0) image_index = 3; // Back
+    // 1. Turn animation ON
+    image_speed = 1;
+	image_xscale = -0.55; 
+    image_yscale = 0.55;
+
+    if (_input_x > 0)      last_dir = "right";
+    else if (_input_x < 0) last_dir = "left";
+
+    // Set walking sprite
+    if (last_dir == "right") sprite_index = s_walking_animation_frame_left;
+    else                     sprite_index = s_walking_animation_frame_right;
+		
+	// --- FOOTSTEP SOUND LOGIC ---
+	if (walking_sound == -1) {
+        walking_sound = choose(snd_walking_2, snd_walking_3);
+		audio_sound_gain(snd_walking_2, 0.3, 0);
+		audio_sound_gain(snd_walking_3, 0.3, 0);
     }
-} else {
-    if (abs(vx) < 0.2 && abs(vy) < 0.2) {
-        image_index = 2;
+
+    // 2. If that specific sound isn't playing yet, start it on a LOOP
+    if (!audio_is_playing(walking_sound)) {
+        audio_play_sound(walking_sound, 1, true); // 'true' makes it loop!
     }
 }
 
-// For future animations
-image_speed = 0;
+else {
+    if (abs(vx) < 0.2 && abs(vy) < 0.2) {
+        image_speed = 0.3;
+        image_yscale = 0.55;
+        image_xscale = 0.55;
+
+        if (last_dir == "right") sprite_index = s_idle_animation_right;
+        else                     sprite_index = s_idle_animation_left;
+        
+        // --- INSTANT STOP ---
+        // This kills the "loop" the moment the player stops moving
+        if (walking_sound != -1) {
+            audio_stop_sound(walking_sound);
+            walking_sound = -1;
+        } 
+	}
+}

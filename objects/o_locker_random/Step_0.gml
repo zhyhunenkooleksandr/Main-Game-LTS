@@ -1,5 +1,5 @@
-if (can_be_opened and global.can_open_lockers) {
-	//Trigering interaction
+if (can_be_opened && global.can_open_lockers) {
+  
 if (ready_to_open) {
     var _near = (distance_to_object(o_player) < 10);
     var _key = keyboard_check_pressed(ord("E"));
@@ -12,10 +12,13 @@ if (ready_to_open) {
         }
 	//Check if this is correct locker
     if (_near && (_key || _click)) {
+		audio_play_sound(snd_locker_open, 1, false)
+		
 		var _saved_xscale = image_xscale;
 		var _saved_yscale = image_yscale;
 		
         instance_change(o_locker_open, true);
+		
 		
 		image_xscale = _saved_xscale * 4;
 		image_yscale = _saved_yscale * 4;
@@ -32,5 +35,4 @@ if (ready_to_open) {
     }
 }
 }
-
 }

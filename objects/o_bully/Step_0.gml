@@ -9,3 +9,6 @@ if (_near_player && (_key_interact || _mouse_interact)) {
         room_goto(rm2);
     }
 }
+
+// Idle Animation Speed
+image_speed = 0.35;

@@ -8,8 +8,11 @@ if (player_state == "idle") {
         player_state = "attack";
         player_can_damage = true;
         attack_timer = attack_duration;
+		
+		audio_play_sound(snd_MC_Punch, 5, false);
     } else if (_key_blk) {
         player_state = "block";
+		
     }
 }
 
@@ -27,8 +30,12 @@ if (player_state == "attack") {
         if (enemy_state == "idle" && irandom(1) == 1) {
             enemy_state = "block";
             enemy_attack_timer = 20;
+			
+			audio_play_sound(snd_MC_Punch_Blocked, 6, false);
         } else {
             enemy_lives -= 1;
+			
+			audio_play_sound(snd_MC_Punch, 6, false);
         }
         player_can_damage = false; 
     }
@@ -52,6 +59,11 @@ if (enemy_state == "attack") {
     if (enemy_attack_timer == 1 && enemy_can_damage) {
         if (player_state != "block") {
             player_lives -= 1;
+			
+		audio_play_sound(snd_Bully_Punch, 10, false);
+        } else {
+            audio_play_sound(snd_Bully_Punch_Blocked, 10, false);
+			
         }
         enemy_can_damage = false; 
     }

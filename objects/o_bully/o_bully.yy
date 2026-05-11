@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_bully",
   "spriteId": {
-    "name": "s_bully_standing",
-    "path": "sprites/s_bully_standing/s_bully_standing.yy",
+    "name": "s_idle_animation_bully",
+    "path": "sprites/s_idle_animation_bully/s_idle_animation_bully.yy",
   },
   "solid": false,
   "visible": true,

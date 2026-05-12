@@ -1,5 +1,1 @@
 ready_to_open = true;
-
-
-
-

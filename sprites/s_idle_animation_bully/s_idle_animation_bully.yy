@@ -31,6 +31,7 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a6378834-ecb6-486e-9a9f-4b4d563edd8c",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6c1a78f6-8b6e-4d04-a5ee-9d4a6f166d72",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"429541eb-bea8-4018-ab24-b2fc29abf8d9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dff11508-b1c3-4767-99a4-9bdde29ecaa9",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -42,7 +43,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 4.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -50,6 +51,7 @@
             {"id":"e9c72b0f-c366-47b5-9eb9-46e4e14d6fa2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a6378834-ecb6-486e-9a9f-4b4d563edd8c","path":"sprites/s_idle_animation_bully/s_idle_animation_bully.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a28c45ac-d5e3-4e4e-8f79-d4d11ef19b0c","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6c1a78f6-8b6e-4d04-a5ee-9d4a6f166d72","path":"sprites/s_idle_animation_bully/s_idle_animation_bully.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"15d3d665-764f-43f6-a562-6defcdb1abc7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"429541eb-bea8-4018-ab24-b2fc29abf8d9","path":"sprites/s_idle_animation_bully/s_idle_animation_bully.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"68c4dc32-de71-4e80-8eaa-33a9c2a68039","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dff11508-b1c3-4767-99a4-9bdde29ecaa9","path":"sprites/s_idle_animation_bully/s_idle_animation_bully.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

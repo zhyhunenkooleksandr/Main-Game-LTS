@@ -1,11 +1,17 @@
 // IDLE // ATTACK // BLOCK // Enemy
 if (o_game_Fight.enemy_state == "idle") {
-    sprite_index = s_bully_Idle;
+	image_xscale = 0.9
+	image_yscale = 0.9
+    sprite_index = s_bully_idle;
 } else if (o_game_Fight.enemy_state == "attack") {
-    sprite_index = s_bully_attack;
+    sprite_index = s_bully_Attack;
+	image_xscale = 0.9
+	image_yscale = 0.9
 }
 else if (o_game_Fight.enemy_state == "block") {
-    sprite_index = s_bully_Block;
+	image_xscale = 0.9
+	image_yscale = 0.9
+    sprite_index = s_bully_block;
 }
 
 //Enemy Dies

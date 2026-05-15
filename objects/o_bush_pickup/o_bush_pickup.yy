@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_pickup_locker",
+  "name": "o_bush_pickup",
   "spriteId": {
     "name": "s_wall_collision",
     "path": "sprites/s_wall_collision/s_wall_collision.yy",

@@ -3,7 +3,9 @@ randomize();
 global.has_item = false;
 
 global.can_open_lockers = false;
-//bush
-global.has_item_bush = false;
+//bushs
+global.has_bush_item = false;
 
-global.can_search_bush = false;
+global.can_search_bushes = false;
+
+global.reached_end = false;

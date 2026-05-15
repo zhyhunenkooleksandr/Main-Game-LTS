@@ -98,6 +98,8 @@ else {
         if (walking_sound != -1) {
             audio_stop_sound(walking_sound);
             walking_sound = -1;
+			
+			
         } 
 	}
 }

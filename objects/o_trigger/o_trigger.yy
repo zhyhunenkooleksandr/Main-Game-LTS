@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_plant_big",
+  "name": "o_trigger",
   "spriteId": {
-    "name": "s_plant_big",
-    "path": "sprites/s_plant_big/s_plant_big.yy",
+    "name": "s_wall_collision",
+    "path": "sprites/s_wall_collision/s_wall_collision.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,12 +27,10 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"holds_item","varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
-  ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Plants",
-    "path": "folders/Objects/Objects/Plants.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
 }

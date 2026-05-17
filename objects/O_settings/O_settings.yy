@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "O_settings",
+  "name": "o_settings",
   "spriteId": null,
   "solid": false,
   "visible": true,

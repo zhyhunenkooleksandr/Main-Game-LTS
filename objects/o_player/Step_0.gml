@@ -1,3 +1,12 @@
+//Intro
+if (global.player_locked == true) {
+    vx = 0;
+    vy = 0;
+    image_speed = 0;
+    if (last_dir == "right") sprite_index = s_idle_animation_right;
+    else sprite_index = s_idle_animation_left;
+    exit;
+}
 //Camera
 var _cam_w = camera_get_view_width(view_camera[0]);
 var _cam_h = camera_get_view_height(view_camera[0]);

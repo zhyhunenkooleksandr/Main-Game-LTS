@@ -61,6 +61,7 @@ if (enemy_state == "attack") {
             player_lives -= 1;
 			
 		audio_play_sound(snd_Bully_Punch, 10, false);
+		audio_play_sound(snd_crowd_lose, 5, false);
         } else {
             audio_play_sound(snd_Bully_Punch_Blocked, 10, false);
 			

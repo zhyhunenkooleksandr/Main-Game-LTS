@@ -1,8 +1,7 @@
 image_speed = 0.5;
 
-// --- NEW CODE: Change dialogue if player triggered the end ---
+// NEW CODE
 if (global.reached_end == true) {
-    // Overwrite the Variable Definition text with new arrays of text
     my_text = ["Ah, you made it back from the end of the room!", "You should probably check the bushes now."];
 }
 
@@ -19,8 +18,7 @@ if (_near && _input && alarm[0] <= 0) {
         _box.creator = id;
         alarm[0] = 9999;
         
-        // --- THE UNLOCK LOGIC ---
-        // Only unlock things if the player has been to the end of the room!
+        // UNLOCK LOGIC
         if (global.reached_end == true) {
             global.can_search_bushes = true;
         }

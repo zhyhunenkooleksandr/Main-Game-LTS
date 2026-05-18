@@ -74,6 +74,7 @@
     {"id":{"name":"o_locker_open","path":"objects/o_locker_open/o_locker_open.yy",},"order":1,},
     {"id":{"name":"o_image_wall_back","path":"objects/o_image_wall_back/o_image_wall_back.yy",},"order":0,},
     {"id":{"name":"snd_MC_Punch","path":"sounds/snd_MC_Punch/snd_MC_Punch.yy",},"order":0,},
+    {"id":{"name":"o_pause","path":"objects/o_pause/o_pause.yy",},"order":2,},
     {"id":{"name":"o_bin","path":"objects/o_bin/o_bin.yy",},"order":0,},
     {"id":{"name":"s_fire_extinguisher","path":"sprites/s_fire_extinguisher/s_fire_extinguisher.yy",},"order":0,},
     {"id":{"name":"s_wall","path":"sprites/s_wall/s_wall.yy",},"order":0,},

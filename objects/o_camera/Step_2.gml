@@ -1,3 +1,5 @@
+if (instance_exists(o_pause)) exit;
+
 // Camera Settings
 if (instance_exists(o_player)) {
     var _cam = view_camera[0];

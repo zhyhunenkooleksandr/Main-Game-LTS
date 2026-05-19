@@ -1,7 +1,18 @@
 image_speed = 0.5;
 
 // NEW Dialogue
-if (global.reached_end == true) {
+
+//If player picked up the bug
+if (global.has_bush_item == true) {
+    my_text = [
+        "My hair isn't red...",
+        "Even though my name is Redd",
+        "It'll make me look like a lesbian..."
+    ];
+}
+
+//If player hit trigger
+else if (global.reached_end == true) {
     my_text = ["Hey, you're back.", 
 	"Seems you've been getting in a trouble with that big guy.", 
 	"If you want some advice", 
@@ -10,7 +21,7 @@ if (global.reached_end == true) {
 	"He hates the opposite colour of the lockers!"]
 }
 
-// Triggering Dialogue & Quest Logic
+// Triggering Dialogue
 var _near = (distance_to_object(o_player) < 30);
 var _input = keyboard_check_pressed(ord("E")) || (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, id));
 
@@ -23,7 +34,7 @@ if (_near && _input && alarm[0] <= 0) {
         _box.creator = id;
         alarm[0] = 9999;
         
-        // UNLOCK LOGIC
+        // UNLOCK new dialugue
         if (global.reached_end == true) {
             global.can_search_bushes = true;
         }

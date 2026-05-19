@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_bush_pickup",
+  "name": "o_posters",
   "spriteId": {
-    "name": "s_bug",
-    "path": "sprites/s_bug/s_bug.yy",
+    "name": "s_posters",
+    "path": "sprites/s_posters/s_posters.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,13 +25,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Interactive",
-    "path": "folders/Objects/Interactive.yy",
+    "name": "Posters",
+    "path": "folders/Objects/Objects/Posters.yy",
   },
 }

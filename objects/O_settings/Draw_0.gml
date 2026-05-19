@@ -3,7 +3,7 @@ draw_set_valign(fa_middle);
 //1. DRAW HEADER
 draw_set_halign(fa_center);
 draw_set_color(c_white);
-draw_text_transformed(room_width / 2, header_y, "--- SETTINGS ---", 1.6, 1.6, 0);
+draw_text_transformed(room_width / 2, header_y, "SETTINGS", 1.6, 1.6, 0);
 
 //2. DRAW COLUMNS
 for (var i = 0; i < array_length(controls); i++) {

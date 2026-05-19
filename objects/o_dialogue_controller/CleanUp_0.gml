@@ -1,4 +1,4 @@
 //Clean up
 if (instance_exists(creator)) {
-    creator.alarm[0] = 300;
+    creator.alarm[0] = 180;
 }

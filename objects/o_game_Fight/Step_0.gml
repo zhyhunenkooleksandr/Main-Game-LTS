@@ -35,7 +35,11 @@ if (player_state == "attack") {
         } else {
             enemy_lives -= 1;
 			
+			audio_stop_sound(snd_crowd_lose); 
+            audio_stop_sound(snd_crowd_cheering);
+			
 			audio_play_sound(snd_MC_Punch, 6, false);
+			audio_play_sound(snd_crowd_cheering, 2, false);
         }
         player_can_damage = false; 
     }
@@ -59,6 +63,9 @@ if (enemy_state == "attack") {
     if (enemy_attack_timer == 1 && enemy_can_damage) {
         if (player_state != "block") {
             player_lives -= 1;
+			
+		audio_stop_sound(snd_crowd_cheering);
+        audio_stop_sound(snd_crowd_lose);
 			
 		audio_play_sound(snd_Bully_Punch, 10, false);
 		audio_play_sound(snd_crowd_lose, 5, false);

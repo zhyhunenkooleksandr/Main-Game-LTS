@@ -35,15 +35,16 @@ var _mouse_click = mouse_check_button_pressed(mb_left) && _mouse_hovering_any;
 
 if (_select_keyboard || _mouse_click) {
     switch(index) {
-        case 0: 
+        case 0: // PLAY BUTTON
+            audio_stop_sound(snd_soundtrack); 
             room_goto(rm1);
             break;
             
-        case 1: 
-            room_goto(rm_settings);
+        case 1: // SETTINGS BUTTON
+            room_goto(rm_settings); 
             break;
             
-        case 2: 
+        case 2: // QUIT BUTTON
             game_end();
             break;
     }

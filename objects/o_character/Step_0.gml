@@ -1,10 +1,18 @@
-// --- NEW CODE: Change dialogue if player triggered the end ---
+image_speed = 0.5;
+
+// NEW Dialogue
 if (global.reached_end == true) {
     // Overwrite the Variable Definition text with new arrays of text
-    my_text = ["Ah, you made it back from the end of the room!", "hhhheeee, hhhhhaaaa"];
+    my_text = ["Ohh, it YOU again", 
+	"You want help from me?", 
+	"What am I going to get out of this?", 
+	"Hmmm…", "Okay, don't reply.", "I'll only help this once.", 
+	"Me and big B aren't on good terms.", 
+	"You should DEFINITELY use Hair Spray.", 
+	"He has SOOO much hair."] ;
 }
 
-// 2. Triggering Dialogue & Quest Logic
+// Triggering Dialogue & Quest Logic
 var _near = (distance_to_object(o_player) < 30);
 var _input = keyboard_check_pressed(ord("E")) || (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, id));
 
@@ -17,8 +25,7 @@ if (_near && _input && alarm[0] <= 0) {
         _box.creator = id;
         alarm[0] = 9999;
         
-        // --- THE UNLOCK LOGIC ---
-        // Only unlock things if the player has been to the end of the room!
+        // THE UNLOCK LOGIC
         if (global.reached_end == true) {
             global.can_open_lockers = true;
         }

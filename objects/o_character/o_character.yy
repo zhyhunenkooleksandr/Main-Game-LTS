@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_character",
   "spriteId": {
-    "name": "s_character_1",
-    "path": "sprites/s_character_1/s_character_1.yy",
+    "name": "s_character",
+    "path": "sprites/s_character/s_character.yy",
   },
   "solid": false,
   "visible": true,

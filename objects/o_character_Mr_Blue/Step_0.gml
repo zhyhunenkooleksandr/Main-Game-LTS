@@ -1,11 +1,16 @@
 image_speed = 0.5;
 
-// NEW CODE
+// NEW Dialogue
 if (global.reached_end == true) {
-    my_text = ["Ah, you made it back from the end of the room!", "You should probably check the bushes now."];
+    my_text = ["Hey, you're back.", 
+	"Seems you've been getting in a trouble with that big guy.", 
+	"If you want some advice", 
+	"I've heard my students say he's terrified of bugs.", 
+	"Maybe that information could be useful.", 
+	"He hates the opposite colour of the lockers!"]
 }
 
-// 2. Triggering Dialogue & Quest Logic
+// Triggering Dialogue & Quest Logic
 var _near = (distance_to_object(o_player) < 30);
 var _input = keyboard_check_pressed(ord("E")) || (mouse_check_button_pressed(mb_left) && position_meeting(mouse_x, mouse_y, id));
 

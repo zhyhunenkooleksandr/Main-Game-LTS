@@ -1,6 +1,7 @@
 // Enemy and Player Lives
 player_lives = 15;
 enemy_lives = 20;
+enemy_hurt_timer = 0;
 
 // APPLY ITEMS EFFECTS
 

@@ -40,5 +40,6 @@ if (point_in_rectangle(mouse_x, mouse_y, _x1, _y1, _x2, _y2)) {
 var _mouse_click = mouse_check_button_pressed(mb_left) && back_hovered;
 
 if (_select_keyboard || _mouse_click) {
+	audio_play_sound(snd_menu_back, 1, false);
     room_goto(rm_menu); 
 }

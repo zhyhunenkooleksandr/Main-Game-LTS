@@ -33,6 +33,7 @@ if (!show_settings) {
     if (_select_keyboard || _mouse_click) {
         switch(index) {
             case 0: // RESUME
+				audio_play_sound(snd_menu_forward, 1, false);
                 instance_activate_all();
                 if (sprite_exists(pause_sprite)) sprite_delete(pause_sprite);
                 instance_destroy();
@@ -40,9 +41,11 @@ if (!show_settings) {
                 
             case 1: // SETTINGS
                 show_settings = true;
+				audio_play_sound(snd_menu_forward, 1, false);
                 break;
                 
             case 2: // QUIT
+				audio_play_sound(snd_menu_back, 1, false);
                 game_end();
                 break;
         }
@@ -74,7 +77,7 @@ if (!show_settings) {
     }
     
     // 2. Back Button
-    var _back_keyboard = keyboard_check_pressed(vk_escape) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space);
+    var _back_keyboard = keyboard_check_pressed(vk_escape) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("E"));
     
     var _btn_x = _gui_w / 2;
     var _btn_y = _gui_h * 0.85;
@@ -88,6 +91,7 @@ if (!show_settings) {
     var _mouse_click = mouse_check_button_pressed(mb_left) && back_hovered;
     
     if (_back_keyboard || _mouse_click) {
+		audio_play_sound(snd_menu_back, 1, false);
         show_settings = false; 
         slider_dragging = false;
     }

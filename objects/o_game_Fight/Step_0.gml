@@ -35,6 +35,10 @@ if (player_state == "attack") {
         } else {
             enemy_lives -= 1;
 			
+			enemy_hurt_timer = 30; 
+            
+            enemy_state = "hurt";
+			
 			audio_stop_sound(snd_crowd_lose); 
             audio_stop_sound(snd_crowd_cheering);
 			
@@ -82,6 +86,7 @@ if (enemy_state == "attack") {
 }
 
 // --- DEATH CHECK ---
+
    // --- PLAYER ---
 if (player_lives <= 0) {
     instance_destroy();
@@ -93,6 +98,15 @@ if (enemy_lives <= 0) {
     instance_destroy();
     show_message("Prototype Victory: Enemy Defeated.");
     game_end();
+}
+
+// --- ENEMY HURT RECOVERY ---
+if (enemy_hurt_timer > 0) {
+    enemy_hurt_timer -= 1;
+
+    if (enemy_hurt_timer <= 0) {
+        enemy_state = "idle"; 
+    }
 }
 
 

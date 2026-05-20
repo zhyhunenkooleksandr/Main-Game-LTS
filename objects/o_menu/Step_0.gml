@@ -33,18 +33,22 @@ for (var i = 0; i < array_length(options); i++) {
 // 3. Selection
 var _mouse_click = mouse_check_button_pressed(mb_left) && _mouse_hovering_any;
 
+
 if (_select_keyboard || _mouse_click) {
     switch(index) {
         case 0: // PLAY BUTTON
             audio_stop_sound(snd_soundtrack); 
+			audio_play_sound(snd_menu_forward, 1, false);
             room_goto(rm1);
             break;
             
         case 1: // SETTINGS BUTTON
             room_goto(rm_settings); 
+			audio_play_sound(snd_menu_forward, 1, false);
             break;
             
         case 2: // QUIT BUTTON
+			audio_play_sound(snd_menu_back, 1, false);
             game_end();
             break;
     }

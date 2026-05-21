@@ -1,5 +1,5 @@
 // 1. Keyboard Navigation
-var _select_keyboard = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_escape);
+var _select_keyboard = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("E"));
 
 // 2. Audio Slider Dragging Logic
 var _slider_left = slider_x - (slider_width / 2);

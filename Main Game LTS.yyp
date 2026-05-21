@@ -163,6 +163,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MC Punch Blocked","folderPath":"folders/Sounds/Fight/MC Punch Blocked.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MC Punch","folderPath":"folders/Sounds/Fight/MC Punch.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Main Menu","folderPath":"folders/Sounds/Main Menu.yy","order":6,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sounds In Menu","folderPath":"folders/Sounds/Main Menu/Sounds In Menu.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Soundtrack","folderPath":"folders/Sounds/Main Menu/Soundtrack.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MC_Walking","folderPath":"folders/Sounds/MC_Walking.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Open_Locker","folderPath":"folders/Sounds/Open_Locker.yy","order":2,},
@@ -205,7 +206,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Speech Bubble","folderPath":"folders/Sprites/Speech Bubble.yy","order":9,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":8,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sounds In Menu","folderPath":"folders/Sounds/Main Menu/Sounds In Menu.yy","order":2,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

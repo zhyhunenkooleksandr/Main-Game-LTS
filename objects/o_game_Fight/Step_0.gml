@@ -1,13 +1,19 @@
+// --- PLAYER COOLDOWN ---
+if (player_cooldown > 0) {
+    player_cooldown -= 1;
+}
 // --- CONTROLS ---
 var _key_atk = mouse_check_button_pressed(mb_left) || keyboard_check_pressed(ord("A"));
 var _key_blk = mouse_check_button(mb_right) || keyboard_check(ord("D"));
 
 // --- HANDLE PLAYER STATES ---
 if (player_state == "idle") {
-    if (_key_atk) {
+    if (_key_atk && player_cooldown <= 0) {
         player_state = "attack";
         player_can_damage = true;
         attack_timer = attack_duration;
+		
+		player_cooldown = 45;
 		
 		audio_play_sound(snd_MC_Punch, 5, false);
     } else if (_key_blk) {
@@ -27,7 +33,8 @@ if (player_state == "attack") {
     attack_timer -= 1;
     
     if (attack_timer == 1 && player_can_damage) {
-        if (enemy_state == "idle" && irandom(1) == 1) {
+        if (enemy_state == "idle" && irandom(100) <= 80) {
+			
             enemy_state = "block";
             enemy_attack_timer = 20;
 			

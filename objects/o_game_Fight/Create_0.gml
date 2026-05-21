@@ -1,6 +1,6 @@
 // Enemy and Player Lives
-player_lives = 15;
-enemy_lives = 20;
+player_lives = 5;
+enemy_lives = 15;
 enemy_hurt_timer = 0;
 
 // APPLY ITEMS EFFECTS
@@ -9,10 +9,10 @@ enemy_hurt_timer = 0;
 if (global.has_item == true) {
     if (global.item_id == 0) {
         //Bad Item
-        enemy_lives += 10;
+        enemy_lives += 5;
     } else if (global.item_id == 1) {
         //Good Item
-        enemy_lives -= 10;
+        enemy_lives -= 5;
     }
     
     global.has_item = false; 
@@ -43,6 +43,9 @@ player_can_damage = true;
 
 // Random Enemy Attack
 alarm[0] = room_speed * random_range(1, 2);
+
+// Attack Cooldown 
+player_cooldown = 0;
 
 //Attack Timers
 attack_duration = 10;
